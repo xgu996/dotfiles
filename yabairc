@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+#
+set -x
+
+sudo /opt/homebrew/bin/yabai --load -sa
+/opt/homebrew/bin/yabai -m signal --add event=dock_dit_restart action="sudo /opt/homebrew/bin/yabai --load-sa"
+
+/opt/homebrew/bin/yabai -m config layout bsp
+/opt/homebrew/bin/yabai -m config top_padding 0
+/opt/homebrew/bin/yabai -m config bottom_padding 0
+/opt/homebrew/bin/yabai -m config left_padding 0
+/opt/homebrew/bin/yabai -m config right_padding 0
+/opt/homebrew/bin/yabai -m config window_gap 0
+
+
+# float some applications
+yabai -m rule --add app='Finder' manage=off
+yabai -m rule --add app='WeChat' manage=off
+yabai -m rule --add app='QQ' manage=off
+yabai -m rule --add app='python' manage=off
+yabai -m rule --add app='Skim' manage=off
+
+# float system preferences
+yabai -m rule --add app='^System Information$' manage=off
+yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add title='Preferences$' manage=off
+
+# float settings windows
+yabai -m rule --add title='Settings$' manage=off
+
+echo "yabai configuration loaded .."

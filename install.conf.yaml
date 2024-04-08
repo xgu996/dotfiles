@@ -1,0 +1,9 @@
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.yabairc: yabairc
+    ~/.skhdrc: skhdrc
+    ~/.tmux.conf: tmux.conf
+    ~/.config/nvim: nvim
+    ~/.config/alacritty: alacritty
