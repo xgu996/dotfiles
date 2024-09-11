@@ -6,7 +6,11 @@ local M = {
 }
 
 M.config = function()
-	require("copilot").setup({})
+	require("copilot").setup({
+		filetypes={
+			tex=false
+		}
+	})
 end
 
 return M 

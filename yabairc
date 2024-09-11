@@ -6,12 +6,11 @@ sudo /opt/homebrew/bin/yabai --load -sa
 /opt/homebrew/bin/yabai -m signal --add event=dock_dit_restart action="sudo /opt/homebrew/bin/yabai --load-sa"
 
 /opt/homebrew/bin/yabai -m config layout bsp
-/opt/homebrew/bin/yabai -m config top_padding 0
-/opt/homebrew/bin/yabai -m config bottom_padding 0
-/opt/homebrew/bin/yabai -m config left_padding 0
-/opt/homebrew/bin/yabai -m config right_padding 0
-/opt/homebrew/bin/yabai -m config window_gap 0
-
+/opt/homebrew/bin/yabai -m config top_padding 5 
+/opt/homebrew/bin/yabai -m config bottom_padding 5
+/opt/homebrew/bin/yabai -m config left_padding 5 
+/opt/homebrew/bin/yabai -m config right_padding 5 
+/opt/homebrew/bin/yabai -m config window_gap 5
 
 # float some applications
 yabai -m rule --add app='Finder' manage=off
@@ -19,6 +18,8 @@ yabai -m rule --add app='WeChat' manage=off
 yabai -m rule --add app='QQ' manage=off
 yabai -m rule --add app='python' manage=off
 yabai -m rule --add app='Skim' manage=off
+yabai -m rule --add app='R2020a' manage=off
+yabai -m rule --add app='Arc' manage=off
 
 # float system preferences
 yabai -m rule --add app='^System Information$' manage=off
@@ -27,5 +28,11 @@ yabai -m rule --add title='Preferences$' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
+
+# sketchybar in multi monitor
+# yabai -m config external_bar all:0:0
+
+# borders active_color=0xffC678DD inactive_color=0xff494d64 width=5.0 &
+
 
 echo "yabai configuration loaded .."

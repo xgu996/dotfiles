@@ -1,4 +1,6 @@
-import = ["/Users/biubiu/.config/alacritty/dracula.toml", "/Users/biubiu/.config/alacritty/fonts.toml"]
+import = ["/Users/biubiu/.config/alacritty/alabaster.toml", "/Users/biubiu/.config/alacritty/fonts.toml"]
+# import = ["/Users/biubiu/.config/alacritty/fonts.toml"]
+# Maple Mono SC NF
 live_config_reload = true
 
 [env]
@@ -9,11 +11,11 @@ history = 10000
 multiplier = 3
 
 [window]
-blur = true
+blur = false
 decorations = "Buttonless"
 dynamic_padding = true
 dynamic_title = true
-opacity = 0.85
+opacity = 0.8
 option_as_alt = "Both"
 resize_increments = true
 startup_mode = "Windowed"
@@ -21,3 +23,6 @@ startup_mode = "Windowed"
 [window.dimensions]
 columns = 120
 lines = 35
+
+
+

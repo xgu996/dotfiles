@@ -1,49 +1,110 @@
 return {
+		  "HoNamDuong/hybrid.nvim",
+		  lazy = false,
+		  priority = 1000,
+		  opts = {},
+		config = function()
+			vim.cmd([[
+				set termguicolors
+				colorscheme hybrid
+			]])
+		end
 
-	-- "techtuner/aura-neovim",
-	-- lazy = false,
-	-- name = "aura",
+	-- "sainnhe/sonokai",
+	-- lazy=false,
+	-- name = "sonokai",
 	-- priority = 1000,
 	-- config = function()
 	-- 	vim.cmd([[
 	-- 		set termguicolors
-	-- 		colorscheme aura
+	-- 		colorscheme sonokai
 	-- 	]])
 	-- end
 
-	'veiledshadow/nvim-deus',
-	lazy = false,
-	name = "deus",
-	--priority = 1000,
-	config = function()
-		vim.cmd([[
-			set termguicolors
-			colorscheme deus
-		]])
-	end
+	-- "rebelot/kanagawa.nvim",
+	-- lazy = false,
+	-- name = "kanagawa",
+	-- --priority = 1000,
+	-- config = function()
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme kanagawa
+	-- 	]])
+	-- end
 
-	-- "lunarvim/darkplus.nvim",
+-- "spaceduck-theme/nvim",
+-- 	lazy = false,
+-- 	name = "spaceduck",
+-- 	--priority = 1000,
+-- 	config = function()
+-- 		vim.cmd([[
+-- 			set termguicolors
+-- 			colorscheme spaceduck
+-- 		]])
+-- 	end
+
+	-- 'catppuccin/nvim',
+	-- lazy = false,
+	-- name = "catppuccin",
+	-- --priority = 1000,
+	-- config = function()
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme catppuccin
+	-- 	]])
+	-- end
+
+	-- 'wilmanbarrios/palenight.nvim',
 	-- lazy = false,
 	-- priority = 1000,
 	-- config = function()
-	-- 	vim.cmd.colorscheme("darkplus")
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme palenight
+	-- 	]])
 	-- end
 
-	-- "LunarVim/primer.nvim",
-	-- lazy = false,  -- make sure we load this during startup if it is your main colorscheme
-	-- priority = 1000, -- make sure to load this before all the other start plugins
-	-- config = function ()
-	-- 	vim.cmd.colorscheme("primer_dark")
-	-- end
-
-	-- 'veiledshadow/alabaster.nvim',
+	-- 'ellisonleao/gruvbox.nvim',
 	-- lazy = false,
-	-- name = "alabaster",
+	-- name = "gruvbox",
 	-- priority = 1000,
 	-- config = function()
-	-- 	vim.cmd([[colorscheme alabaster]])
-	-- 	vim.cmd([[hi ColorColumn guibg=#660000]])
-	-- end,
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme gruvbox
+	-- 	]])
+	-- end
+
+	-- 'veiledshadow/nvim-deus',
+	-- lazy = false,
+	-- name = "deus",
+	-- --priority = 1000,
+	-- config = function()
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme deus
+	-- 	]])
+	-- end
+
+	-- 'veiledshadow/nightsky.vim',
+	-- lazy = false,
+	-- priority = 1000,
+	-- config = function()
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme nightsky
+	-- 	]])
+	-- end
+
+	-- "craftzdog/solarized-osaka.nvim",
+	-- lazy = false,
+	-- priority = 1000,
+	-- config = function()
+	-- 	vim.cmd([[
+	-- 		set termguicolors
+	-- 		colorscheme solarized-osaka
+	-- 	]])
+	-- end
 
 	-- 'Mofiqul/vscode.nvim',
 	-- lazy = false,
@@ -58,72 +119,29 @@ return {
 	-- 	-- vim.cmd([[hi ColorColumn guibg=#660000]])
 	-- end
 
-	-- 'veiledshadow/nvim-deus',
+	-- 'Mofiqul/adwaita.nvim',
 	-- lazy = false,
-	-- name = "deus",
-	-- --priority = 1000,
+	-- name = "adwaita",
+	-- priority = 1000,
 	-- config = function()
-	-- 	vim.cmd([[
-	-- 	set termguicolors
-	-- 	colorscheme deus
-	-- ]])
-	-- 	-- vim.cmd([[hi ColorColumn guibg=#660000]])
+	-- 	vim.cmd([[colorscheme adwaita]])
 	-- end
 
-	-- "tiagovla/tokyodark.nvim",
-	-- opts = {
-	-- 	-- custom options here
-	-- },
-	-- config = function(_, opts)
-	-- 	require("tokyodark").setup(opts)   -- calling setup is optional
-	-- 	vim.cmd [[colorscheme tokyodark]]
-	-- end,
-	--
 	-- "folke/tokyonight.nvim",
 	-- lazy = false,
-	-- priority = 1000,
+	-- -- priority = 1000,
 	-- opts = {},
 	-- config = function()
-	-- 	vim.cmd[[colorscheme tokyonight-night]]
+	-- 	vim.cmd [[colorscheme tokyonight-night]]
 	-- end
 
-	-- "craftzdog/solarized-osaka.nvim",
+	-- "navarasu/onedark.nvim",
 	-- lazy = false,
 	-- priority = 1000,
 	-- opts = {},
 	-- config = function()
-	-- 	vim.cmd [[colorscheme solarized-osaka]]
+	-- 	vim.cmd [[colorscheme onedark]]
 	-- end
 
-	-- "EdenEast/nightfox.nvim",
-	-- lazy = false,
-	-- priority = 1000,
-	-- opts = {},
-	-- config = function()
-	-- 	vim.cmd[[colorscheme nightfox]]
-	-- end
 
-	-- "catppuccin/nvim",
-	-- lazy = false,
-	-- priority = 1000,
-	-- opts = {},
-	-- config = function()
-	-- 	vim.cmd [[colorscheme catppuccin]]
-	-- end
-
-	-- 'Mofiqul/dracula.nvim',
-	-- lazy = false,
-	-- priority = 1000,
-	-- opts = {},
-	-- config = function()
-	-- 	vim.cmd [[colorscheme dracula]]
-	-- end
-
-	-- 'shaunsingh/nord.nvim',
-	-- lazy = false,
-	-- priority = 1000,
-	-- opts = {},
-	-- config = function()
-	-- 	vim.cmd [[colorscheme nord]]
-	-- end
 }

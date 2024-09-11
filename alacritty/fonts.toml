@@ -5,11 +5,19 @@ draw_bold_text_with_bright_colors = true
 size = 22
 
 [font.bold]
-family = "SauceCodePro Nerd Font"
+# family = "SauceCodePro Nerd Font"
+family = "FiraCode Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# family = "IosevkaTermSlab Nerd Font"
+# family = "Maple Mono SC NF"
 style = "Bold"
-
+#
 [font.bold_italic]
-family = "SauceCodePro Nerd Font"
+# family = "SauceCodePro Nerd Font"
+family = "FiraCode Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# family = "IosevkaTermSlab Nerd Font"
+# family = "Maple Mono SC NF"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -17,13 +25,22 @@ x = 0
 y = 0
 
 [font.italic]
-family = "SauceCodePro Nerd Font"
+# family = "SauceCodePro Nerd Font"
+family = "FiraCode Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# family = "IosevkaTermSlab Nerd Font"
+# family = "Maple Mono SC NF"
 style = "Italic"
 
 [font.normal]
-family = "SauceCodePro Nerd Font"
+# family = "SauceCodePro Nerd Font"
+# family = "FiraCode Nerd Font"
+family = "JetBrainsMono Nerd Font"
+# family = "IosevkaTermSlab Nerd Font"
+# family = "Maple Mono SC NF"
 style = "Regular"
 
 [font.offset]
 x = 0
 y = 0
+

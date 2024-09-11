@@ -4,7 +4,7 @@ local M = {
 		"CRAG666/code_runner.nvim",
 		lazy = true,
 		keys = {
-			{ "<leader>cr", "<Cmd>RunCode<CR>", desc = "run code" },
+			{ "<leader>r", "<Cmd>RunCode<CR>", desc = "run code" },
 		},
 		config = function()
 			require('code_runner').setup({

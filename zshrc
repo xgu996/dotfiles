@@ -132,7 +132,7 @@ alias proxy="export http_proxy=http://127.0.0.1:7890;export https_proxy=http://1
 alias unproxy="unset http_proxy;unset https_proxy;unset ALL_PROXY"
 alias vi="nvim"
 alias reload="source ~/.zshrc"
-alias ra="joshuto"
+alias ra="yazi"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -267,8 +267,15 @@ alias unproxy="unset http_proxy;unset https_proxy;unset ALL_PROXY"
 alias vi="nvim"
 alias vim="nvim"
 alias reload="source ~/.zshrc"
-alias ra="joshuto"
+alias ra="yazi"
 alias lc='colorls -lA --sd'
+
+# >>> openmp 
+#
+# export CC=/opt/homebrew/Cellar/llvm@16/16.0.6/bin/clang
+export CC=/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang
+#<<<
+
 
 # >>>> netgen initialize >>>
 export PYTHONPATH=/Users/biubiu/anaconda3/envs/ng/lib/python3.8/site-packages.
