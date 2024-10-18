@@ -265,7 +265,7 @@ export EDITOR=nvim
 alias proxy="export http_proxy=http://127.0.0.1:7890;export https_proxy=http://127.0.0.1:7890;export ALL_PROXY=socks5://127.0.0.1:7890"
 alias unproxy="unset http_proxy;unset https_proxy;unset ALL_PROXY"
 alias vi="nvim"
-alias vim="nvim"
+# alias vim="nvim"
 alias reload="source ~/.zshrc"
 alias ra="yazi"
 alias lc='colorls -lA --sd'
@@ -328,4 +328,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config ~/ys.omp.json)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -76,7 +76,7 @@ return {
 			},
 			texlab = {},
 			-- ltex = {},
-			-- remark_ls = {},
+			remark_ls = {},
 		}
 
 		local on_attach = function(_, bufnr)

@@ -1,32 +1,36 @@
 return {
 
-	{
-		"shellRaining/hlchunk.nvim",
-		init = function()
-			vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, { pattern = "*", command = "EnableHL", })
-			require('hlchunk').setup({
-				chunk = {
-					enable = true,
-					use_treesitter = true,
-					style = {
-						{ fg = "#806d9c" },
-					},
-				},
-				indent = {
-					chars = { "│", "¦", "┆", "┊", },
-					use_treesitter = false,
-					style = {
-						{ fg = "#806d9c" }
-					}
-				},
-				blank = {
-					enable = false,
-				},
-				line_num = {
-					use_treesitter = true,
-				},
-			})
-		end
-	},
+{
+  "echasnovski/mini.indentscope",
+  version = false, -- wait till new 0.7.0 release to put it back on semver
+	event = "VeryLazy",
+  -- event = "LazyFile",
+  opts = {
+    -- symbol = "▏",
+    symbol = "│",
+    options = { try_as_border = true },
+  },
+  init = function()
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = {
+        "alpha",
+        "dashboard",
+        "fzf",
+        "help",
+        "lazy",
+        "lazyterm",
+        "mason",
+        "neo-tree",
+        "notify",
+        "toggleterm",
+        "Trouble",
+        "trouble",
+      },
+      callback = function()
+        vim.b.miniindentscope_disable = true
+      end,
+    })
+  end,
+}
 
 }

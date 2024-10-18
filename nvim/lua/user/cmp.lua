@@ -1,51 +1,51 @@
 local icons = require("user.icons")
 
 local setCompHL = function()
-    -- 设定基本配色
-    vim.api.nvim_set_hl(0, "CmpItemAbbr", { fg = '#928374', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = '#49a0f0', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = '#fb4934', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemAbbrDeprecated", { fg = '#3c3836', bg = "NONE", strikethrough = true })
+	-- 设定基本配色
+	vim.api.nvim_set_hl(0, "CmpItemAbbr", { fg = '#928374', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = '#49a0f0', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = '#fb4934', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemAbbrDeprecated", { fg = '#3c3836', bg = "NONE", strikethrough = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemMenu", { fg = '#C678DD', bg = "NONE", italic = true, bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemMenu", { fg = '#C678DD', bg = "NONE", italic = true, bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindField", { fg = '#fabd2f', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindProperty", { fg = '#fabd2f', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindEvent", { fg = '#fabd2f', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindField", { fg = '#fabd2f', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindProperty", { fg = '#fabd2f', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindEvent", { fg = '#fabd2f', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = '#fb4934', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindEnum", { fg = '#fb4934', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = '#fb4934', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = '#fb4934', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindEnum", { fg = '#fb4934', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = '#fb4934', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindConstant", { fg = '#ffa6ff', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindConstructor", { fg = '#ffa6ff', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = '#ffa6ff' })
-    vim.api.nvim_set_hl(0, "CmpItemKindReference", { fg = '#ffa6ff', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindConstant", { fg = '#ffa6ff', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindConstructor", { fg = '#ffa6ff', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = '#ffa6ff' })
+	vim.api.nvim_set_hl(0, "CmpItemKindReference", { fg = '#ffa6ff', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = '#98C379', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindStruct", { fg = '#98C379', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindClass", { fg = '#98C379', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindModule", { fg = '#98C379', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindOperator", { fg = '#98C379', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = '#98C379', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindStruct", { fg = '#98C379', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindClass", { fg = '#98C379', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindModule", { fg = '#98C379', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindOperator", { fg = '#98C379', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = '#c0c0c0', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindFile", { fg = '#3c3836', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = '#c0c0c0', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindFile", { fg = '#3c3836', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindUnit", { fg = '#f4c069', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = '#f4c069', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindFolder", { fg = '#f4c069', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindUnit", { fg = '#f4c069', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = '#f4c069', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindFolder", { fg = '#f4c069', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = '#6699CC', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindValue", { fg = '#6699CC', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindEnumMember", { fg = '#6699CC', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = '#6699CC', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindValue", { fg = '#6699CC', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindEnumMember", { fg = '#6699CC', bg = "NONE", bold = true })
 
-    vim.api.nvim_set_hl(0, "CmpItemKindInterface", { fg = '#00d0c0', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindColor", { fg = '#00d0c0', bg = "NONE", bold = true })
-    vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = '#00d0c0', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindInterface", { fg = '#00d0c0', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindColor", { fg = '#00d0c0', bg = "NONE", bold = true })
+	vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = '#00d0c0', bg = "NONE", bold = true })
 
-    -- CMP pmenu 配色
-    vim.api.nvim_set_hl(0, "MyPmenu", { bg = '#242a32', fg = '#c0c0c0', bold = true })
-    vim.api.nvim_set_hl(0, "MyPmenuSel", { bg = '#83a598', fg = '#ffffff', bold = true })
+	-- CMP pmenu 配色
+	vim.api.nvim_set_hl(0, "MyPmenu", { bg = '#242a32', fg = '#c0c0c0', bold = true })
+	vim.api.nvim_set_hl(0, "MyPmenuSel", { bg = '#83a598', fg = '#ffffff', bold = true })
 end
 
 -- local setCompHL = function()
@@ -98,7 +98,9 @@ end
 local M = {
 
 	"hrsh7th/nvim-cmp",
+
 	event = "InsertEnter",
+
 	dependencies =
 	{
 		"hrsh7th/cmp-nvim-lsp",
@@ -112,7 +114,13 @@ local M = {
 			end
 		},
 		"saadparwaiz1/cmp_luasnip",
-		"L3MON4D3/LuaSnip",
+		{
+			"L3MON4D3/LuaSnip",
+			config = function()
+				-- local luasnip = require("luasnip")
+				-- luasnip.snippets = require("snippets.latex_snippets").load_snippets()
+			end,
+		},
 		{
 			"rafamadriz/friendly-snippets",
 			config = function()
@@ -121,6 +129,21 @@ local M = {
 		},
 
 	},
+
+	keys = {
+		{
+			"<tab>",
+			function()
+				return require("luasnip").jumpable(1) and "<Plug>luasnip-jump-next" or "<tab>"
+			end,
+			expr = true,
+			silent = true,
+			mode = "i",
+		},
+		{ "<tab>",   function() require("luasnip").jump(1) end,  mode = "s" },
+		{ "<s-tab>", function() require("luasnip").jump(-1) end, mode = { "i", "s" } },
+	},
+
 }
 
 M.config = function()

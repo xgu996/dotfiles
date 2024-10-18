@@ -11,10 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
 require('lazy').setup({
 	require("user.editor"),
 	require("user.bufferline"),
+	require("user.cmp"),
 	require("user.code"),
 	require("user.comment"),
 	require("user.colorizer"),
@@ -25,18 +25,20 @@ require('lazy').setup({
 	require("user.formatter"),
 	require("user.indent"),
 	-- require("user.ghostline"),
+	require("user.git"),
+	require("user.lsp"),
 	require("user.lualine"),
 	require("user.markdown"),
 	require("user.neotree"),
-	require("user.noice"),
+	-- require("user.noice"),
 	require("user.project"),
 	require("user.python"),
+	require("user.rainbow_pair"),
 	require("user.tex"),
 	require("user.terminal"),
 	require("user.telescope"),
+	require("user.theme"),
 	require("user.ui"),
 	require("user.winbar"),
-	require("user.theme"),
-	require("user.cmp"),
-	require("user.lsp"),
+	require("user.yazi"),
 })

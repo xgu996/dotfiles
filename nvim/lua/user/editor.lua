@@ -95,6 +95,59 @@ local M = {
 		"ethanholz/nvim-lastplace",
 		config = true,
 	},
+
+	{
+		'kevinhwang91/nvim-ufo',
+		dependencies = { 'kevinhwang91/promise-async' },
+		opts = {
+			filetype_exclude = { 'help', 'alpha', 'dashboard', 'neo-tree', 'Trouble', 'lazy', 'mason' },
+		},
+		config = function(_, opts)
+			vim.api.nvim_create_autocmd('FileType', {
+				group = vim.api.nvim_create_augroup('local_detach_ufo', { clear = true }),
+				pattern = opts.filetype_exclude,
+				callback = function()
+					require('ufo').detach()
+				end,
+			})
+
+			vim.opt.foldlevelstart = 99
+			require('ufo').setup(opts)
+		end,
+	},
+
+	{
+		"hedyhli/outline.nvim",
+		keys = { { "<leader>cs", "<cmd>Outline<cr>", desc = "Toggle Outline" } },
+		cmd = "Outline",
+		opts = function()
+			local defaults = require("outline.config").defaults
+			local opts = {
+				symbols = {
+					icons = {},
+					-- filter = vim.deepcopy(LazyVim.config.kind_filter),
+				},
+				keymaps = {
+					up_and_jump = "<up>",
+					down_and_jump = "<down>",
+				},
+			}
+
+			for kind, symbol in pairs(defaults.symbols.icons) do
+				opts.symbols.icons[kind] = {
+					-- icon = LazyVim.config.icons.kinds[kind] or symbol.icon,
+					hl = symbol.hl,
+				}
+			end
+			return opts
+		end,
+	}
+
+	-- viaual-multi
+	-- {
+	-- 	"mg979/vim-visual-multi",
+	-- }
+
 }
 
 return M

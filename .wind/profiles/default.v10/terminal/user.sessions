@@ -1,0 +1,93 @@
+[
+    {
+        "process.arguments" : "-i -l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::gitbash",
+        "session.label" : "bash",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/bash",
+        "session.uuid" : "dee70fd0-3464-43b8-b5e1-69b556243ab9"
+    },
+    {
+        "process.arguments" : "-l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::knot-coral",
+        "session.label" : "csh",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/csh",
+        "session.uuid" : "40efb6fe-2a5e-4f6b-9d0e-8f31e56cdae3"
+    },
+    {
+        "process.arguments" : "-i -l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::knot-forestgreen",
+        "session.label" : "dash",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/dash",
+        "session.uuid" : "d680109f-a9f1-4da8-9343-23b3b8400156"
+    },
+    {
+        "process.arguments" : "-i -l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::knot-mediumslateblue",
+        "session.label" : "ksh",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/ksh",
+        "session.uuid" : "199196eb-844d-4628-adc0-891c6bb0c7c4"
+    },
+    {
+        "process.arguments" : "-i -l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::powershell",
+        "session.label" : "sh",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/sh",
+        "session.uuid" : "1576387c-10fb-4811-a5f3-27549478dc11"
+    },
+    {
+        "process.arguments" : "-l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::knot-dodgerblue",
+        "session.label" : "tcsh",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/tcsh",
+        "session.uuid" : "1c47dd57-d9ee-4331-affa-1afeb692dbc4"
+    },
+    {
+        "process.arguments" : "-i -l",
+        "process.workingDirectory" : "$(HomeDir)",
+        "session.group" : "Shell sessions",
+        "session.icon" : "session::knot-dodgerblue",
+        "session.label" : "zsh",
+        "session.protocol" : "Shell",
+        "session.system" : "macos",
+        "session.target" : "/bin/zsh",
+        "session.uuid" : "3bd54026-861b-41ea-b7b8-9a460dbce085"
+    },
+    {
+        "session.icon" : "session::square-rosybrown",
+        "session.port" : 222,
+        "session.protocol" : "SSH",
+        "session.target" : "login.rci.sc.edu",
+        "session.uuid" : "c6d36768-672a-4c5e-b17d-d755aba4b9ba"
+    },
+    {
+        "session.icon" : "session::square-darkturquoise",
+        "session.port" : 222,
+        "session.protocol" : "SSH",
+        "session.target" : "xgu@login.rci.sc.edu",
+        "session.uuid" : "abde6336-0faa-4562-903b-5ef3948e9796"
+    }
+]

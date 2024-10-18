@@ -40,3 +40,23 @@ map("n", "]b", "<cmd>bnext<cr>", { desc = "next buffer" })
 -- better indenting
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+
+-- 定义一个快捷键 <leader>p 来设置 PYTHONPATH 为 src 的上级目录
+vim.api.nvim_set_keymap('n', '<leader><leader>p', ':lua SetPythonPath()<CR>', { noremap = true, silent = true })
+
+-- Lua 函数来设置 PYTHONPATH
+function SetPythonPath()
+	-- 查找 src 目录
+	local src_dir = vim.fn.finddir('src', '.;')
+
+	if src_dir ~= '' then
+		-- 获取 src 的上级目录
+		local project_root = vim.fn.fnamemodify(src_dir, ':h')
+
+		-- 设置 PYTHONPATH 环境变量为项目根目录
+		vim.env.PYTHONPATH = vim.fn.expand(project_root)
+		print('PYTHONPATH set to ' .. vim.env.PYTHONPATH)
+	else
+		print('src directory not found!')
+	end
+end
