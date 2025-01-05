@@ -12,7 +12,7 @@ return {
 		routes = {
 			{
 				filter = {
-					event = "msg_show",
+					event = "msg_showmode",
 					any = {
 						{ find = "%d+L, %d+B" },
 						{ find = "; after #%d+" },

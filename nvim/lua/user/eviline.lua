@@ -7,7 +7,7 @@ return {
 
 		-- Color table for highlights
 		local colors = {
-			bg = '#202328',
+			bg = '#000000',
 			fg = '#bbc2cf',
 			yellow = '#F1FA8C',
 			cyan = '#8BE9FD',
@@ -78,7 +78,41 @@ return {
 		ins_left {
 			function() return '▊' end,
 			color = { fg = colors.blue }, -- Sets highlighting of component
-			left_padding = 0        -- We don't need space before this
+			left_padding = 0           -- We don't need space before this
+		}
+
+		ins_left {
+			-- mode component
+			function()
+				return ''
+			end,
+			color = function()
+				-- auto change color according to neovims mode
+				local mode_color = {
+					n = colors.red,
+					i = colors.green,
+					v = colors.blue,
+					[''] = colors.blue,
+					V = colors.blue,
+					c = colors.magenta,
+					no = colors.red,
+					s = colors.orange,
+					S = colors.orange,
+					[''] = colors.orange,
+					ic = colors.yellow,
+					R = colors.violet,
+					Rv = colors.violet,
+					cv = colors.red,
+					ce = colors.red,
+					r = colors.cyan,
+					rm = colors.cyan,
+					['r?'] = colors.cyan,
+					['!'] = colors.red,
+					t = colors.red,
+				}
+				return { fg = mode_color[vim.fn.mode()] }
+			end,
+			padding = { right = 1 },
 		}
 
 

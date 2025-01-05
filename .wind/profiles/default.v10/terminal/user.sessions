@@ -89,5 +89,12 @@
         "session.protocol" : "SSH",
         "session.target" : "xgu@login.rci.sc.edu",
         "session.uuid" : "abde6336-0faa-4562-903b-5ef3948e9796"
+    },
+    {
+        "session.icon" : "session::square-coral",
+        "session.port" : 222,
+        "session.protocol" : "SSH",
+        "session.target" : "xgu@login.rci.sc.edu",
+        "session.uuid" : "a4f75bdd-22f4-42b1-a2c0-124a7d8b1127"
     }
 ]

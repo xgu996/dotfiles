@@ -39,6 +39,16 @@ local M = {
 		end,
 	},
 
+	{ 'echasnovski/mini.align', version = '*', config = function() require('mini.align').setup() end },
+
+	{ 
+		'echasnovski/mini.files', version = '*', 
+		keys = {
+		{ "<leader>mf", "<cmd>lua MiniFiles.open()<cr>", desc = "NeoTree" },
+		},
+		config = function() require('mini.files').setup() end
+	},
+
 	-- which-key
 	{
 		"folke/which-key.nvim",
@@ -141,12 +151,8 @@ local M = {
 			end
 			return opts
 		end,
-	}
+	},
 
-	-- viaual-multi
-	-- {
-	-- 	"mg979/vim-visual-multi",
-	-- }
 
 }
 

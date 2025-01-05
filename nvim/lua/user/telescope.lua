@@ -17,21 +17,21 @@ return {
 		{ "<leader>:",  "<cmd>Telescope command_history<cr>", desc = "Command History" },
 		{ "<leader>sr", "<cmd>Telescope registers<cr>",       desc = "Registers" },
 	},
-	-- config = function()
-	-- 	require("telescope").setup {
-	-- 		pickers = {
-	-- 			buffers = {
-	-- 				sort_lastused = true,
-	-- 				theme = "ivy",
-	-- 				previewer = false,
-	-- 			},
-	-- 			find_files = {
-	-- 				theme = "ivy"
-	-- 			},
-	-- 			live_grep = {
-	-- 				theme = "ivy"
-	-- 			}
-	-- 		},
-	-- 	}
-	-- end
+	config = function()
+		require("telescope").setup {
+			pickers = {
+				buffers = {
+					sort_lastused = true,
+					theme = "ivy",
+					previewer = false,
+				},
+				find_files = {
+					theme = "ivy"
+				},
+				live_grep = {
+					theme = "ivy"
+				}
+			},
+		}
+	end
 }

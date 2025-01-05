@@ -1,20 +1,23 @@
 local M = {
+	{
+		"sphamba/smear-cursor.nvim",
+		opts = {},
+	},
 
 	-- {
-	-- 	"nvim-zh/colorful-winsep.nvim",
-	-- 	config = true,
-	-- 	event = { "WinNew" },
-	-- },
-
-	-- {
-	-- 	'nvimdev/dashboard-nvim',
-	-- 	event = 'VimEnter',
-	-- 	config = function()
-	-- 		require('dashboard').setup {
-	-- 			-- config
-	-- 		}
-	-- 	end,
-	-- 	dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+	-- 	"folke/snacks.nvim",
+	-- 	priority = 1000,
+	-- 	lazy = false,
+	-- 	opts = {
+	-- 		-- your configuration comes here
+	-- 		-- or leave it empty to use the default settings
+	-- 		-- refer to the configuration section below
+	-- 		bigfile = { enabled = true },
+	-- 		notifier = { enabled = false },
+	-- 		quickfile = { enabled = true },
+	-- 		statuscolumn = { enabled = true },
+	-- 		words = { enabled = true },
+	-- 	},
 	-- },
 
 	{
@@ -37,7 +40,7 @@ local M = {
 		⠀⠘⢆⠀⠀⣤⠞⠁⠀⠀⠀⠀⡼⢇⠀⠀⠀⠈⠙⠲⣄⠀⠈⠙⢋⡵⠋⢸⣄⠀
 		⠀⠀⢸⡕⠆⠂⠀⠀⠀⠀⣠⠞⠁⠘⡄⠀⠀⠀⠀⠀⠘⠆⠀⠒⠋⠀⠀⢸⠪⠄
 		⠀⠀⠸⠁⠀⠀⠀⠀⣀⠴⠃⠀⠀⠀⠙⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠇⠀
-    ]]
+	   ]]
 
 			logo = string.rep("\n", 8) .. logo .. "\n\n"
 
@@ -123,8 +126,8 @@ local M = {
 			ensure_installed = {
 				-- "c",
 				-- "cpp",
-				"lua",
-				"vim",
+				-- "lua",
+				-- "vim",
 				-- "python",
 				-- "latex",
 			},

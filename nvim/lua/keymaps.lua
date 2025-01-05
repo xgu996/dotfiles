@@ -42,7 +42,7 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 
 -- 定义一个快捷键 <leader>p 来设置 PYTHONPATH 为 src 的上级目录
-vim.api.nvim_set_keymap('n', '<leader><leader>p', ':lua SetPythonPath()<CR>', { noremap = true, silent = true })
+map('n', '<leader>p', ':lua SetPythonPath()<CR>', { noremap = true, silent = true })
 
 -- Lua 函数来设置 PYTHONPATH
 function SetPythonPath()
@@ -60,3 +60,5 @@ function SetPythonPath()
 		print('src directory not found!')
 	end
 end
+
+map('n', '<leader><leader>', ":lua vim.fn.search('<++>')<CR>c4l", { noremap = true, silent = true })

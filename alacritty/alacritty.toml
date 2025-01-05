@@ -1,4 +1,4 @@
-import = ["/Users/biubiu/.config/alacritty/alabaster.toml", "/Users/biubiu/.config/alacritty/fonts.toml"]
+import = ["/Users/biubiu/.config/alacritty/tokyonight.toml", "/Users/biubiu/.config/alacritty/fonts.toml"]
 # import = ["/Users/biubiu/.config/alacritty/fonts.toml"]
 # Maple Mono SC NF
 live_config_reload = true
