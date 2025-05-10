@@ -17,9 +17,10 @@ yabai -m rule --add app='Finder' manage=off
 yabai -m rule --add app='WeChat' manage=off
 yabai -m rule --add app='QQ' manage=off
 yabai -m rule --add app='python' manage=off
-yabai -m rule --add app='Skim' manage=off
+# yabai -m rule --add app='Skim' manage=off
 yabai -m rule --add app='R2020a' manage=off
 yabai -m rule --add app='Arc' manage=off
+yabai -m rule --add app='zoom' manage=off
 
 # float system preferences
 yabai -m rule --add app='^System Information$' manage=off
@@ -29,6 +30,9 @@ yabai -m rule --add title='Preferences$' manage=off
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
 
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
 # sketchybar in multi monitor
 # yabai -m config external_bar all:0:0
 

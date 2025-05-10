@@ -7,3 +7,5 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim: nvim
     ~/.config/alacritty: alacritty
+    ~/.config/fastfetch: fastfetch
+    ~/.config/neovide: neovide

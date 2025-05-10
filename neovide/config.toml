@@ -1,0 +1,32 @@
+# 指定 nvim 可执行文件路径（如果你的 nvim 已经在系统 PATH 中，可以删掉这行）
+neovim_bin = "/opt/homebrew/bin/nvim"
+
+# 字体设置
+[font]
+# 正文字体列表，数组中可放多个回退字体
+normal = ["Iosevka Nerd Font"]
+# 字号
+size = 16.0
+
+# 窗口启动时最大化
+window_start_maximized = true
+
+# 窗口透明度 (0.0 完全透明, 1.0 不透明)
+transparency = 0.9
+
+# VSYNC 开关，防止画面撕裂
+vsync = true
+
+# 光标动画
+cursor_animate = true
+cursor_animation_length = 0.1
+cursor_trail_size = 0.8
+
+# 滚动动画
+scroll_animation_length = 0.3
+
+# 边距 (像素)
+padding_top = 8
+padding_bottom = 8
+padding_left = 8
+padding_right = 8

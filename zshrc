@@ -43,6 +43,8 @@ alias vim="nvim"
 alias reload="source ~/.zshrc"
 alias ra="yazi"
 alias lc='colorls -lA --sd'
+alias pc='fastfetch'
+alias ad="ollama run deepseek-r1:8b"
 
 # ------------------
 # Environment Variables
@@ -52,10 +54,16 @@ export EDITOR=nvim
 export LC_ALL=en_US.UTF-8 
 export LANG=en_US.UTF-8
 
+
+# ------------------
+# Neovide
+# ------------------
+export NEOVIM_BIN="/opt/homebrew/bin/nvim"
+
 # ------------------
 # Compiler and Tools
 # ------------------
-export CC=/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang
+export CC=/opt/homebrew/Cellar/llvm/19.1.7/bin/clang
 
 # ------------------
 # Netgen Initialization
@@ -81,6 +89,16 @@ else
     fi
 fi
 unset __conda_setup
+
+# ------------------
+# LSCOLORS
+# ------------------
+# export LSCOLORS="exfxcxdxbxexexabagacad"
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 
 # ------------------
 # TeXLive Initialization
@@ -113,7 +131,7 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary
 # ------------------
 # Oh My Posh
 # ------------------
-eval "$(oh-my-posh init zsh --config ~/kali.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/cat.omp.json)"
 
 # ------------------
 # NVM Initialization
@@ -126,3 +144,12 @@ export NVM_DIR="$HOME/.nvm"
 # Nix Daemon
 # ------------------
 source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/biubiu/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

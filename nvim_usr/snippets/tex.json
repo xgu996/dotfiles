@@ -1,0 +1,100 @@
+{
+	"sum": {
+		"prefix": "sum",
+		"body": [
+			"\\sum_{${1}}^{${2}} ${3}"
+		],
+		"description": "Summation notation"
+	},
+	"int": {
+		"prefix": "int",
+		"body": [
+			"\\int_{${1}} ${2} \\, d${3}"
+		],
+		"description": "Integral notation"
+	},
+	"diff": {
+		"prefix": "diff",
+		"body": [
+			"\\frac{d${1:u}}{d${2:x}}"
+		],
+		"description": "Differentiation"
+	},
+	"pdiff": {
+		"prefix": "pdiff",
+		"body": [
+			"\\frac{\\partial ${1:u}}{\\partial ${2:x}}"
+		],
+		"description": "Partial differentiation"
+	},
+	"grad": {
+		"prefix": "grad",
+		"body": [
+			"\\nabla ${1:u}"
+		],
+		"description": "Gradient operator"
+	},
+	"div": {
+		"prefix": "div",
+		"body": [
+			"\\nabla \\cdot ${1:u}"
+		],
+		"description": "Divergence operator"
+	},
+	"curl": {
+		"prefix": "curl",
+		"body": [
+			"\\nabla \\times ${1:u}"
+		],
+		"description": "Curl operator"
+	},
+	"lap": {
+		"prefix": "lap",
+		"body": [
+			"\\Delta ${1:u}"
+		],
+		"description": "Laplacian operator"
+	},
+	"weak": {
+		"prefix": "weak",
+		"body": [
+			"\\int_{${1:\\Omega}} ${2: \\nabla u \\cdot \\nabla v} \\, d${3:x}"
+		],
+		"description": "Weak formulation integral"
+	},
+	"ibp": {
+		"prefix": "ibp",
+		"body": [
+			"\\int_{${1:\\Omega}} ${2:u} \\nabla \\cdot ${3:v} \\, d${4:x} = \\int_{\\partial ${1}} ${2:u} ${3:v} \\cdot \\mathbf{n} \\, d{\\Gamma} - \\int_{${1}} \\nabla ${2:u} \\cdot ${3:v} \\, d${4:x}"
+		],
+		"description": "Integration by parts formula"
+	},
+	"fdm": {
+		"prefix": "fdm",
+		"body": [
+			"\\frac{${1:u}_{i+1} - 2${1:u}_i + ${1:u}_{i-1}}{h^2}"
+		],
+		"description": "Finite difference approximation of second derivative"
+	},
+	"fem": {
+		"prefix": "fem",
+		"body": [
+			"\\sum_{j} K_{ij} u_j = f_i"
+		],
+		"description": "Finite element method equation"
+	},
+	"variational": {
+		"prefix": "variational",
+		"body": [
+			"\\int_{${1:\\Omega}} \\left( \\nabla u \\cdot \\nabla v + ${2:f} v \\right) \\, d${3:x} = \\int_{${1:\\Omega}} ${4:g} v \\, d${3:x}"
+		],
+		"description": "Variational formulation"
+	},
+	"norm": {
+		"prefix": "norm",
+		"body": [
+			"\\|${1}\\|"
+		],
+		"description": "Norm"
+	}
+}
